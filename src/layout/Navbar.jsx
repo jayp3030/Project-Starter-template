@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-import { useDispatch} from "react-redux";
+import { useDispatch, useSelector} from "react-redux";
 import { NavLink } from "react-router-dom";
 import { login, logout } from "../redux/actions/authAction";
 
-const Navbar = ({ isAuth }) => {
+const Navbar = () => {
+  const isAuth = useSelector((state) => state.isAuth);
   const dispatch = useDispatch();
   return (
     <>
-      
       <nav>
         <h2>loggedin</h2>
         <ul>

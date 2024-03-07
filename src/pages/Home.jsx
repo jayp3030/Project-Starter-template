@@ -3,8 +3,8 @@ import navWithAuthentication from '../HOCs/navWithAuthentication'
 
 const Home = () => {
   return (
-    <div>
-      home...........
+    <div className='text-5xl font-bold'>
+      home hello 
     </div>
   )
 }

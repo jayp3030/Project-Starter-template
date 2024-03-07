@@ -10,12 +10,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home name='Meet' />} />
 
           <Route element={<PrivateRoute />}>
             <Route path="/cart" element={<Cart />} />
           </Route>
-          
+
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<h1>404 - page Not found</h1>} />
         </Routes>
