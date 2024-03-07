@@ -2,6 +2,7 @@
 import { useDispatch, useSelector} from "react-redux";
 import { NavLink } from "react-router-dom";
 import { login, logout } from "../redux/actions/authAction";
+import ThemeToggler from "../components/ThemeToggler";
 
 const Navbar = () => {
   const isAuth = useSelector((state) => state.isAuth);
@@ -31,6 +32,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        <ThemeToggler/>
       </nav>
     </>
   );
