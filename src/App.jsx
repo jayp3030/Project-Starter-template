@@ -1,8 +1,9 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Cart from "./pages/Cart";
+const Home = React.lazy(() => import('./pages/Home'))
+const Cart = React.lazy(() => import('./pages/Cart'))
+const Login = React.lazy(() => import('./pages/Login'))
 import PrivateRoute from "./Routers/PrivateRoute";
 
 function App() {
